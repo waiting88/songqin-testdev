@@ -66,11 +66,11 @@ Genymotion 官网上下载安装包， https://www.genymotion.com/
 
 <br><br>
 ## 运行自动化测试
-- 运行虚拟机，下载开发者头条应用，http://toutiao.io/s/apk， <br>
+- 运行虚拟机，下载开发者头条应用，http://toutiao.io/s/apk <br>
 安装到虚拟机中并运行；<br>
 注册一个账号<br>
 - 根据课堂教学视频，运行Appium Server，并设置、启动服务<br>
-- 下载自动化脚本https://github.com/jcyrss/songqin-testdev/blob/master/appium/src/lesson1/toutiao_login.py，
+- 下载自动化脚本https://github.com/jcyrss/songqin-testdev/blob/master/appium/src/lesson1/toutiao_login.py
 修改其中用户名，密码为你注册的账号，运行脚本完成一个自动登录功能
 
 
