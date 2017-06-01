@@ -9,7 +9,7 @@
 
 - 用 aapt.exe 命令查看 apk包的 appPackage 信息和  主 Activity 信息
 - 用 UIAutomator Viewer 查看应用界面元素信息
-- 编写python程序，完成一个 计算 3+9 ，结果 再乘以5 的自动化功能
+- 编写python程序，完成一个 计算 3+9 ，结果 再乘以5 的自动化功能. 最后判断计算结果是否为60，如果是，测试通过；否则测试不通过
 
 
 
