@@ -1,6 +1,6 @@
 # Python 作业 6
 
-附件里压缩 了一个目录（见附件[0005_1.txt](https://raw.githubusercontent.com/jcyrss/songqin-testdev/master/python/task/attachs/phone.zip)），解压后结构如下。
+附件里压缩 了一个目录（见附件[phone.zip](https://raw.githubusercontent.com/jcyrss/songqin-testdev/master/python/task/attachs/phone.zip)），解压后结构如下。
 ```python
 
 
