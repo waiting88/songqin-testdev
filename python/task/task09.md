@@ -15,7 +15,7 @@
 然后随机给出房间号，要求游戏者选择敲门还是喂食。
 
 如果选择喂食：
-喂老虎应该输入单词 meet，喂羊应该输入单词 grass
+喂老虎应该输入单词 meat，喂羊应该输入单词 grass
 喂对了，体重加10斤。 喂错了，体重减少10斤
 
 如果选择敲门：
@@ -33,34 +33,38 @@
 ## 参考答案，往下翻
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-#### 单线程英文版
+#### 单线程版
 ```python
+# coding=utf8
 from random import randint
 import time
-
-class Tiger(object):
+class Tiger():
     classname = 'tiger'
 
-    def __init__(self,weight=200):
-        self.weight = weight
+    def __init__(self,weigth=200):
+        self.weight = weigth
+
 
     def roar(self):
-        print 'wow!!!'
+        print 'wow!!'
         self.weight -= 5
-
 
     def feed(self,food):
         if food == 'meat':
             self.weight += 10
-            print 'good, weight + 10'
-        else :
+            print 'ok, +10'
+        else:
             self.weight -= 10
-            print 'bad, weight - 10'
+            print 'bad, -10'
 
-class Sheep:
-    classname = 'sheep'
-    def __init__(self,weight=100):
-        self.weight = weight
+
+
+class Sheep():
+    classname = 'Sheep'
+
+    def __init__(self,weigth=100):
+        self.weight = weigth
+
 
     def roar(self):
         print 'mie~~'
@@ -69,45 +73,49 @@ class Sheep:
     def feed(self,food):
         if food == 'grass':
             self.weight += 10
-            print 'good, weight + 10'
-        else :
+            print 'ok, +10'
+        else:
             self.weight -= 10
-            print 'bad, weight - 10'
+            print 'bad, -10'
+
 
 class Room:
-    def __init__(self,num,animal):
+    def  __init__(self,num,animal):
         self.num = num
         self.animal = animal
 
-
+#  房间列表。里面有10个房间
 rooms = []
 for no in range(10):
-    if randint(0,1):
-        ani = Tiger(200)
+    if randint(0,1) == 0:
+        ani = Tiger()
     else:
-        ani = Sheep(100)
+        ani = Sheep()
 
-    room = Room(no,ani)
-    rooms.append(room)
+    rooms.append(Room(no+1,ani))
 
-startTime = time.time()
+
+gameStartTime = time.time()
 while True:
-    curTime = time.time()
-    if (curTime - startTime) > 120:
-        print '\n\n **********  game over ********** \n\n'
-        for idx, room in enumerate(rooms):
-            print 'room :%s' % (idx+1), room.animal.classname, room.animal.weight
-        break
+    roomno = randint(0,9)
+    room = rooms[roomno]
+    print u'现在来到房间 #%s, 敲门(y)还是喂食？' % room.num
 
-
-    roomno = randint(1, 10)
-    room = rooms[roomno-1]  # why -1 ?
-    ch = raw_input('in front of room# %s, knock the door?[y/n]' % roomno)
+    ch = raw_input('')
     if ch == 'y':
         room.animal.roar()
+    else:
+        print u'请喂食'
+        food = raw_input()
+        room.animal.feed(food)
 
-    food = raw_input('please feed the animal:')
-    room.animal.feed(food.strip())
+    curTime = time.time()
+    if curTime - gameStartTime  > 180 :
+        print '******* game over *********'
+        break
+
+for room in rooms:
+    print 'room:%s, %s, %s' % (room.num, room.animal.classname,room.animal.weight)
 ```
 
 #### 多线程中文版，以后学过多线程后再看
