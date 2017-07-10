@@ -17,7 +17,7 @@
 
 
 请大家自行百度搜索，安装虚拟机管理器 virtualbox 或者 vmvareplayer， 创建 64位 虚拟机，
-安装centos镜像（下载地址 http://mirrors.163.com/centos/6.8/isos/x86_64/CentOS-6.8-x86_64-bin-DVD1.iso ）
+安装centos镜像（下载地址 http://mirrors.163.com/centos/6.9/isos/x86_64/CentOS-6.9-x86_64-bin-DVD1.iso）
 
 
     
