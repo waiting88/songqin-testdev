@@ -9,3 +9,17 @@
 参数文件必须使用正确的相对路径或者绝对路径
 
 ```
+
+#### 0002
+
+import paramiko 出现如下错误
+
+```python
+ result_path = result_path + p_path
+UnicodeDecodeError: 'ascii' codec can't decode byte .....
+```
+
+```python
+答： 
+这是环境变量 path 里面有中文导致的
+```
