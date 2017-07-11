@@ -1,6 +1,7 @@
 #### 0001
 
-我已经添加了 文件 test.py 到环境变量 path中， 为什么执行命令 python test.py ，解释器还是提示 can't open file 'test.py' :[Errno 2] No such file or directory
+我已经添加了 文件 test.py 到环境变量 path中， 为什么执行命令 python test.py ，
+解释器还是提示 can't open file 'test.py' :[Errno 2] No such file or directory
 
 ```python
 答： 
