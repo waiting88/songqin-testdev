@@ -29,7 +29,7 @@ file 20170330_110833.mp4
 
 
 ------------------------------
-下载ffmpeg程序 
+下载ffmpeg程序 (进入 http://ffmpeg.zeranoe.com/builds/ 点击 Download FFmpeg按钮即可)
 
 要求大家写一个python程序，运行后提示用户是要做什么操作，如下
  '请选择您要做的操作：1：录制视频，2：合并视频：'
