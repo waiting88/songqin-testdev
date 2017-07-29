@@ -37,7 +37,7 @@ pip install Appium-Python-Client
 ## 安装 Android Studio
 
 官方中文网站
-https://developer.android.google.cn
+https://developer.android.google.cn/studio/index.html
 
 特别注意，安装程序要求路径中最好不要有空格。
 
@@ -46,6 +46,7 @@ https://developer.android.google.cn
 ## 安装JDK
 百度搜索一下jdk(操作一下)，下载安装就可以
 
+http://rj.baidu.com/soft/detail/14459.html?ald
 
 <br><br>
 ## 安装安卓模拟器
@@ -53,12 +54,10 @@ https://developer.android.google.cn
 android studio里面自带的模拟器
 打开 studio，创建一个项目，通过tools - android - AVD Manager菜单创建一个安卓模拟设备
 
-Genymotion
-Genymotion 官网上下载安装包， https://www.genymotion.com/
+Genymotion  需要注册一个账号，注册好了以后，就可以下载了
+Genymotion 官网上下载安装包: https://www.genymotion.com/download/ 
+samsung S7 镜像: http://pan.baidu.com/s/1mhPh9pA
 
-
-
-需要注册一个账号，注册好了以后，就可以下载了
 
 
 安装Genymotion-ARM-Translation_v1.1.zip包，刷入虚拟设备。它支持将ARM的机器指令转换为x86的机器指令。 
