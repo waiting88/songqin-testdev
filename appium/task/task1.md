@@ -55,7 +55,9 @@ android studio里面自带的模拟器
 打开 studio，创建一个项目，通过tools - android - AVD Manager菜单创建一个安卓模拟设备
 
 Genymotion  需要注册一个账号，注册好了以后，就可以下载了
+
 Genymotion 官网上下载安装包: https://www.genymotion.com/download/ 
+
 samsung S7 镜像: http://pan.baidu.com/s/1mhPh9pA
 
 
