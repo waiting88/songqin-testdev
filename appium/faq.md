@@ -29,7 +29,9 @@ C:\Program Files (x86)\AllWinnerTech\PhoenixSuit\adb.exe' not found. Is it insta
 ```java
 问题：
 
-scandir 的问题
+Appium Server 报类似 
+
+ENOENT: no such file or directory, scandir '/Users/vikram-anna/Library/Android/sdk/platform-tools/build-tools' 
 
 回答：
 
