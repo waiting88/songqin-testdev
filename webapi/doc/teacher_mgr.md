@@ -154,7 +154,7 @@ retlist的内容是一个数组，其中每个元素对应一位老师信息。
 
 <br><br><br><br>
 ### 修改老师接口
-用来修改一门培训老师的信息
+用来修改一位培训老师的信息
 
 #### 请求语法
 ```java
@@ -173,9 +173,12 @@ action	填写modify_teacher，表明是为了修改老师信息
 id	 填写要修改的老师的id号
 newdata	 存储创建修改后老师的信息，包括名称、描述、显示次序,为json格式。例如：
 {
-  "name":"初中化学",
-  "desc":"初中化学老师",
-  "display_idx":"4"
+    "username":"lishiming",
+    "password":"sq888",
+    "realname":"李世民",
+    "desc":"李世民老师",
+    "courses":[{"id":419,"name":"初中数学"},{"id":420,"name":"初中英语"}],
+    "display_idx":1
 }
 ```
 
@@ -203,7 +206,7 @@ Content-Type	正常情况下该值将被设为application/json，表示返回 JS
 
 <br><br><br><br>
 ### 删除老师接口
-用来删除一门培训老师
+用来删除一位培训老师
 #### 请求语法
 ```java
 DELETE /api/mgr/sq_mgr/ HTTP/1.1
