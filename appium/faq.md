@@ -20,6 +20,8 @@ C:\Program Files (x86)\AllWinnerTech\PhoenixSuit\adb.exe' not found. Is it insta
 变量名为： ANDROID_HOME 
 值为：android sdk 的安装路径  （例如： C:\Users\HJN\AppData\Local\Android\sdk）
 
+特别注意的是： 设置好以后 Appium Desktop 要重新启动一下
+
 ```
 
 
