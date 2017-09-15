@@ -1,1 +1,9 @@
 theme: jekyll-theme-cayman
+highlighter: rouge
+paginate: 8
+permalink: /:title
+encoding: UTF-8
+gems: [jekyll-paginate]
+title: 松勤自动化学习
+url: https://jcyrss.github.io/songqin-testdev/
+feed: /atom.xml
