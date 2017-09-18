@@ -4,11 +4,10 @@
 
 ### 解释器
 https://www.python.org/ftp/python/3.6.2/python-3.6.2.exe
-http://mirrors.sohu.com/python/2.7.13/python-2.7.13.msi
 
 
 ### 脚本编辑工具notepad++
-http://sw.bos.baidu.com/sw-search-sp/software/5d7946e712c83/npp_7.4.1_Installer.exe
+http://sw.bos.baidu.com/sw-search-sp/software/3756358c42c34/npp_7.5.1_Installer.exe
 
 ### 集成开发环境 pycharm 社区版
 https://www.jetbrains.com/pycharm/download
