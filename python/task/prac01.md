@@ -36,7 +36,7 @@
 ```
 
 ### 判断题
-```python
+```Shell
 - Python 是大小写 不敏感的，print  'ok'  可以执行 Print  'ok' 也可以执行
 
 - Python代码第一行语句，必须在文本文件的第一行
@@ -53,7 +53,7 @@ print 'abc'
 ```
 
 ### 安装运行
-```java
+```Shell
 - 请到Python官网下载Python解释器，并根据课程视频里面的说明进行安装。
 安装成功后测试一下，在任意目录中，执行 python和pip 都可以成功。
 
