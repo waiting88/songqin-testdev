@@ -2,8 +2,8 @@
 
 ### 不定项选择
 
-```java
-- 如果把电脑比如人，那么最像人的大脑的硬件是
+```RobotFramework
+- 如果把电脑比做人，那么最像人的大脑的硬件是
   A 硬盘
   B CPU + 内存
   C 显卡
@@ -17,7 +17,7 @@
 
 - Python解释器做的事情有哪些
   A 把Python 源代码转换为bytecode
-  B  把Python 源代码编译为 exe文件。
+  B 把Python 源代码编译为 exe文件。
   C 执行bytecode
   D 执行 生成的exe文件
 
