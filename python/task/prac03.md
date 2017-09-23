@@ -70,6 +70,15 @@ C)   't' not in a
     
 D)   'inner' in a
 
+
+
+- 定义一个变量var1 其值是一个字符串 what's your name， 下面哪些是错误的 
+
+A)  var1 = "what's your name"
+B)  var1 = what's your name
+C)  var1 = 'what's your name'
+D)  var1 = '''what's your name'''
+
 ```
 
 ### 判断题
@@ -87,6 +96,22 @@ a = [1,2,3,4]
 a[1:3]
     
 对象a 的内容就改变为[2,3]  
+
+- 下面的字符串列出了人的名字 和体重，
+
+str1 = 'name: Micle, weight: 130kg'
+
+要用切片的方式从str1中取出体重（包括kg部分） 可以是  str1[-5:] 
+
+
+- 下面的字符串列出了人的名字 和体重，
+
+str1 = 'name: Jack, weight: 130kg'
+
+要用切片的方式从str1中取出人名  可以是  str1[7:11]   
+
+
+- 长度为n的字符串str1，最后一个元素 的代码表示可以是str1[-1]也可以是str1[n]
 
 ```
 
@@ -165,6 +190,16 @@ C)   't' not in a
     
 D)   'inner' in a
 
+ 
+- 定义一个变量var1 其值是一个字符串 what's your name， 下面哪些是错误的  (B,C)
+
+
+A)  var1 = "what's your name"
+B)  var1 = what's your name
+C)  var1 = 'what's your name'
+D)  var1 = '''what's your name'''
+
+
 ```
 
 ### 判断题
@@ -182,5 +217,21 @@ a = [1,2,3,4]
 a[1:3]
     
 对象a 的内容就改变为[2,3]  （错）
+
+- 下面的字符串列出了人的名字 和体重，
+
+str1 = 'name: Micle, weight: 130kg'
+
+要用切片的方式从str1中取出体重（包括kg部分） 可以是  str1[-5:]    （对）
+
+
+- 下面的字符串列出了人的名字 和体重，
+
+str1 = 'name: Jack, weight: 130kg'
+
+要用切片的方式从str1中取出人名  可以是  str1[7:11]   （错误，应该是str1[6:10]）
+
+
+- 长度为n的字符串str1，最后一个元素 的代码表示可以是str1[-1]也可以是str1[n] （错误：应该是str1[n-1]）
 
 ```
