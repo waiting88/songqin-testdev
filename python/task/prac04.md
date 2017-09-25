@@ -1,4 +1,4 @@
-# Python 练习 3 
+# Python 练习 4 
 
 
 
@@ -45,12 +45,12 @@ else:
 方法一：    
 if a>1:
     if b>2:
-        print 'a,b both > 1'
+        print('a,b both > 1')
         
 方法二：    
 
 if a>1 and b>2:
-    print 'a,b both > 1'  
+    print('a,b both > 1') 
 
 
         
@@ -60,27 +60,27 @@ if a>1 and b>2:
 代码一：    
 score = 90
 if score >= 90:
-    print 'your score is', score
-    print 'excellent'
+    print('your score is', score)
+    print('excellent')
 elif score >= 60:
-    print 'your score is', score
-    print 'ok'
+    print('your score is', score)
+    print('ok')
 else:
-    print 'your score is', score
-    print 'you have trouble'    
+    print('your score is', score)
+    print('you have trouble')
     
 
 代码二：        
    
 score = 90
-print 'your score is', score
+print('your score is', score)
 
 if score >= 90:
-    print 'excellent'
+    print('excellent')
 elif score >= 60:
-    print 'ok'
+    print('ok')
 else:
-    print 'you have trouble'    
+    print('you have trouble') 
 
 
 ```
@@ -137,12 +137,12 @@ else:
 方法一：    
 if a>1:
     if b>2:
-        print 'a,b both > 1'
+        print('a,b both > 1')
         
 方法二：    
 
 if a>1 and b>2:
-    print 'a,b both > 1'  
+    print('a,b both > 1')
 
 
         
@@ -152,27 +152,27 @@ if a>1 and b>2:
 代码一：    
 score = 90
 if score >= 90:
-    print 'your score is', score
-    print 'excellent'
+    print('your score is', score)
+    print('excellent')
 elif score >= 60:
-    print 'your score is', score
-    print 'ok'
+    print('your score is', score)
+    print('ok')
 else:
-    print 'your score is', score
-    print 'you have trouble'    
+    print('your score is', score)
+    print('you have trouble')    
     
 
 代码二：        
    
 score = 90
-print 'your score is', score
+print('your score is', score)
 
 if score >= 90:
-    print 'excellent'
+    print('excellent')
 elif score >= 60:
-    print 'ok'
+    print('ok')
 else:
-    print 'you have trouble'    
+    print('you have trouble')    
 
 
 ```
