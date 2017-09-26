@@ -5,10 +5,14 @@
 
 考核高了， 我工资高些， 大家来南京，好请大家吃饭。。。
 不然我要AA的哦
-
-下面是链接
 ```
-https://ke.qq.com/course/212215#tuin=ba4122
+
+课堂链接 https://ke.qq.com/course/212215#tuin=ba4122
+
+
+![点击这里](https://github.com/jcyrss/songqin-testdev/raw/master/pictures/rate.png "我的课堂")
+
+
 
 
 
