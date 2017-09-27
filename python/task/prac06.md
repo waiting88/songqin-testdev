@@ -5,11 +5,12 @@
 ```
 
 ### 评价到达40个，我会在群里给大家发红包。。。有劳各位啦。。。
-<br>
+<br><br>
 课堂链接 https://ke.qq.com/course/212215#tuin=ba4122
 <br><br>
 ![点击这里](https://github.com/jcyrss/songqin-testdev/raw/master/pictures/rate.png "我的课堂")
 <br><br><br>
+
 
 
 # Python 练习 6
