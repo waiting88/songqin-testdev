@@ -19,11 +19,12 @@ C) "my name is {}, I'm {} years old.".format('Mike',5)
 D) "my name is {}, I'm {} years old.".format(['Mike',5])  
 
 
-- 下面格式化字符串的代码，哪些是错误的 
-A) "my name is {0}, I'm {1} years old.".format('Mike',5)  
+- python3 执行下面格式化字符串的代码，哪些是会报错的
+A) "my name is {0}, I'm {1} years old.".format('Mike',5)  
 B) "my name is {}, I'm {1} years old.".format('Mike',5)   
 C) "I'm {1} years old, my name is {0}".format('Mike',5)   
-D) "my name is {0}, his name is also {0}".format('Mike')  
+D) "my name is {0}, his name is also {0}".format('Mike')   
+E) f"my name is {'Mike'}, his name is also {{Mike}}"  
 ```
 
 
@@ -80,11 +81,12 @@ C) "my name is {}, I'm {} years old.".format('Mike',5)
 D) "my name is {}, I'm {} years old.".format(['Mike',5])  
 
 
-- 下面格式化字符串的代码，哪些是错误的  (b)
-A) "my name is {0}, I'm {1} years old.".format('Mike',5)  
+- python 3 执行下面格式化字符串的代码，哪些是会报错的   (b)
+A) "my name is {0}, I'm {1} years old.".format('Mike',5)  
 B) "my name is {}, I'm {1} years old.".format('Mike',5)   
 C) "I'm {1} years old, my name is {0}".format('Mike',5)   
-D) "my name is {0}, his name is also {0}".format('Mike')  
+D) "my name is {0}, his name is also {0}".format('Mike')   
+E) f"my name is {'Mike'}, his name is also {{Mike}}" 
 ```
 
 
