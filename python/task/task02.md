@@ -1,4 +1,4 @@
-# Python 作业 02 
+# Python 编程作业 02 
 
 ### 请实现一个程序，实现如下需求点
 
@@ -10,7 +10,6 @@
 Jack Green ,   21  ;  Mike Mos, 9;
 
 我们假设 用户输入 上面的信息，必定会遵守下面的规则：
-  信息全部由英文字符组成。
   学生信息之间用分号隔开（分号前后可能有不定数量的空格），
   学生姓名长度最多不超过20个字符。
   每个学生信息里的 姓名和 年龄之间用 逗号隔开（逗号前后可能有不定数量的空格） 。
@@ -30,9 +29,12 @@ Mike Mos   :   09;
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ```python
-inputStr = raw_input('Please input student age info:')
+inputStr = input('Please input student age info:')
 studentInfo = inputStr.split(';')
 for one in studentInfo:
     # check if it is valid input 
@@ -49,6 +51,7 @@ for one in studentInfo:
     
     age = int(age)
 
-    print '%-20s :  %02d' % (name,age)    
-    #print '{:20} :  {:02}'.format(name,age)
+    print('%-20s :  %02d' % (name, age))
+    # print('{:20} :  {:02}'.format(name, age))
+    # print(f'{name:20} :  {age:02}')
 ```
