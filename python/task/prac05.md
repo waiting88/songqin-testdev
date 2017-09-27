@@ -1,11 +1,15 @@
 ```python
 江老师的小广告：
-请各位同学，帮忙到我的腾讯课堂
-给我的课程写一些评价。 这是公司对我们老师的考核要求
-谢谢啦 ：）
-下面是链接
+请各位同学，帮忙到我的腾讯课堂给我的课程写一些评价。  
+对我的考核有好处哦，谢谢大家。
+
+评价到达40个，我会在群里给大家发红包。。。有劳各位啦。。。
 ```
-https://ke.qq.com/course/212215#tuin=ba4122
+
+课堂链接 https://ke.qq.com/course/212215#tuin=ba4122
+<br>
+![点击这里](https://github.com/jcyrss/songqin-testdev/raw/master/pictures/rate.png "我的课堂")
+<br><br>
 
 
 # Python 练习 5 
