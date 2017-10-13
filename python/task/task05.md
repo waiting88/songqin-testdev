@@ -27,9 +27,9 @@ def putInfoToDict(fileName):
 
 key 是各个学生的id号， value是 该学生的签到信息
 
-    学生的签到信息是列表，里面保存着每个签到的信息 
+    其中value，里面保存着该学生所有签到的信息 
     
-        每个签到的信息也是字典，有两个元素： key 是lessonid的 记录课程id，key是checkintime的 记录签到时间
+        其中每个签到的信息是字典对象，有两个元素： key 是lessonid的 记录课程id，key是checkintime的 记录签到时间
 
 比如，对于上面的示例中的3条记录，相应的返回结果如下：
 
