@@ -22,7 +22,7 @@ mySort 函数需要将参数列表中的元素按从小到大排序，最终返�
 ### 参考答案 在下面
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 ```python
-# coding=utf8
+
 def sort(inList):
     newList = []
 
