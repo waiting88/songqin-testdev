@@ -69,11 +69,12 @@ mandy老师   :  web测试技术课程
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ```python
-with open('records/course.txt') as f :
-    courses = f.read().decode('utf8').splitlines()[1:]
+# 先读取文件创建两张表(两个dict)，记录老师的 id:name
+with open('records/course.txt',encoding='utf8') as f :
+    courses = f.read().splitlines()[1:]
 
-with open('records/teacher.txt') as f :
-    teachers = f.read().decode('utf8').splitlines()[1:]
+with open('records/teacher.txt',encoding='utf8') as f :
+    teachers = f.read().splitlines()[1:]
 
 courseDict = {}
 
@@ -97,12 +98,13 @@ for teacher in teachers:
     teacherDict[teacherId] = teacherName
 
 
+# 根据老师教学记录表， 将里面的id替换为 名字
 with open('records/teacher_course.txt') as f :
     teacher_courses = f.read().splitlines()[1:]
 
 
 
-with open('ret.txt','w') as f :
+with open('ret.txt','w',encoding='utf8') as f :
     for tc in teacher_courses:
         if not tc.strip():
             continue
@@ -112,12 +114,14 @@ with open('ret.txt','w') as f :
         courseId = parts[1]
 
         if (teacherId not in teacherDict) or (courseId not in courseDict):
-            print 'skip record {}'.format(tc)
+            print(f'skip record {tc}')
 
-        ret = u"{:10} : {}".format(teacherDict[teacherId],courseDict[courseId])
+        ret = f"{teacherDict[teacherId]:10} : {courseDict[courseId]}"
 
-        print ret
+        print(ret)
 
-        f.write(ret.encode('utf8')+'\n')
+        f.write(ret+'\n')
+
+
 
 ```
