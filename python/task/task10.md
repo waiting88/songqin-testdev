@@ -19,7 +19,7 @@ cetos6.9 下载地址 :
 http://mirrors.163.com/centos/6.9/isos/x86_64/CentOS-6.9-x86_64-bin-DVD1.iso
 
 Putty 下载地址 :
-https://github.com/jcyrss/songqin-testdev/wiki/installations
+https://the.earth.li/~sgtatham/putty/0.70/w32/putty-0.70-installer.msi
 
     
     
