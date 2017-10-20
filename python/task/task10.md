@@ -13,8 +13,13 @@
 
 
 请大家自行百度搜索，安装虚拟机管理器 virtualbox 或者 vmvareplayer， 创建 64位 虚拟机，
-安装centos镜像（下载地址 http://mirrors.163.com/centos/6.9/isos/x86_64/CentOS-6.9-x86_64-bin-DVD1.iso）
+安装centos镜像
 
+cetos6.9 下载地址 :
+http://mirrors.163.com/centos/6.9/isos/x86_64/CentOS-6.9-x86_64-bin-DVD1.iso
+
+Putty 下载地址 :
+https://github.com/jcyrss/songqin-testdev/wiki/installations
 
     
     
@@ -57,12 +62,17 @@ Cached:          1180244 kB
 # coding=utf8
 import time
 
+# MemTotal:        1920648 kB
+# MemFree:           87788 kB
+# Buffers:          229704 kB
+# Cached:          1180244 kB
 def getContent(lines,field):
     for line in lines:
         if field in line:
             value = line.split(':')[1].split('kB')[0].strip()
             return int(value)
 
+# count 用来时间上计数，防止一直运行
 count = 0
 while True:
     count += 1
@@ -76,10 +86,11 @@ while True:
     cached   = getContent(beginlines,'Cached')
 
     # print memTotal,memFree,buffers,cached
+    # 别忘了 * 100
     memUsage = (memFree + buffers + cached) *100.0/memTotal
     # 搜索时间格式
     memUsage = '%s     %.2f%%' % (time.strftime('%Y%m%d_%H:%M:%S'),memUsage)
-    print memUsage
+    print(memUsage)
 
     with open('ret.txt','a') as f:
         f.write(memUsage+'\n')
@@ -99,7 +110,7 @@ import paramiko,time
 
 ssh = paramiko.SSHClient()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh.connect("120.26.96.239",22,"stt", "stt")
+ssh.connect("120.26.96.231",22,"stt", "stt0707")
 
 
 # 创建自己名字的目录
@@ -108,13 +119,12 @@ dirName =  "jcy"
 # 先检查 是否已经存在同名目录了， 如果没有则创建
 stdin, stdout, stderr = ssh.exec_command("ls")
 dircontent =  stdout.read()
-print dircontent
-if dirName in dircontent:
-    print '{} already exists'.format(dirName)
+print(dircontent)
+if dirName in dircontent.splitlines():
+    print('{} already exists'.format(dirName))
 else:
-    print 'make dir {}'.format(dirName)
+    print('make dir {}'.format(dirName))
     ssh.exec_command("mkdir {}".format(dirName))
-
 
 # 传输文件
 sftp = ssh.open_sftp()
@@ -122,16 +132,21 @@ sftp.put('memory.py', '{}/memory.py'.format(dirName))
 sftp.close()
 
 
+# 检查文件是否传输成功，可以将检查文件是否存在机器，做成一个函数。。。
 
 
-# 考虑到长时间没有消息，网络连接可能会被断开。设置一个保持连接的参数
+# 执行脚本
+
+
+# 考虑到长时间没有消息，网络连接可能会被断开。 到网上搜索一番后。
+# 设置一个保持连接的参数
 transport = ssh.get_transport()
 transport.set_keepalive(30)
 
-print 'remote exec python memory.py'
+print('remote exec python memory.py')
 ssh.exec_command("cd %s; python memory.py" % dirName)
 
-print 'wait for 60 seconds...'
+print('wait for 30 seconds...')
 time.sleep(30)
 
 
@@ -141,4 +156,5 @@ sftp.get('{}/ret.txt'.format(dirName),'ret.txt')
 sftp.close()
 
 ssh.close()
+
 ```
