@@ -9,11 +9,7 @@
 获取统计 远程Linux主机的 可用内存率。
 
 
-请大家先安装 paramiko
-    到下面的网址下载 下载VCForPython27.msi
-    https://www.microsoft.com/en-us/download/details.aspx?id=44266
-
-    安装VCForPython27.msi后，再pip install paramiko
+请大家先安装 paramiko :  执行pip install paramiko
 
 
 请大家自行百度搜索，安装虚拟机管理器 virtualbox 或者 vmvareplayer， 创建 64位 虚拟机，
