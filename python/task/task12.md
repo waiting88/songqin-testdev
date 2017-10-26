@@ -32,7 +32,7 @@ import threading
 
 
 urls = [
-'http://mirrors.163.com/centos/6.8/isos/x86_64/README.txt',
+'http://mirrors.163.com/centos/6.9/isos/x86_64/README.txt',
 'http://mirrors.163.com/centos/7.3.1611/isos/x86_64/0_README.txt'
 ]
 
@@ -43,7 +43,7 @@ fileContentList = [None for one in urls]
 lock = threading.Lock()
 
 def thread_entry(idx,url):
-    print 'thread #%s start' % idx
+    print('thread #%s start' % idx)
     r = requests.get(url)
 
     # 注意上面的代码不应该放在获取锁的代码中
@@ -52,10 +52,11 @@ def thread_entry(idx,url):
     fileContentList[idx] = r.text
     lock.release()
 
-    print 'thread #%s end' % idx
+    print('thread #%s end' % idx)
+
 
 if __name__ == '__main__':
-    print 'main thread start.'
+    print('main thread start.')
 
     threadpool = []
 
@@ -74,12 +75,12 @@ if __name__ == '__main__':
     # 所有线程结束后，所有内容都获取到了，合并内容
 
     mergeTxt = '\n\n----------------------\n\n'.join(fileContentList)
-    
-    with open('readme89.txt','w') as f:
-        f.write(mergeTxt.encode('utf8'))
+    print(mergeTxt)
 
+    with open('readme89.txt','w',encoding='utf8') as f:
+        f.write(mergeTxt)
 
-    print 'main thread end.'
+    print('main thread end.')
 
 
 
