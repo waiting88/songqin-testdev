@@ -116,7 +116,7 @@ def merging():
 
     print(videoFileNamesToMer)
 
-    with open('concat.txt','w') as f:
+    with open('concat.txt','w',encoding='utf8') as f:
         for one in videoFileNamesToMer:
             f.write('file ' + one + '\n')
 
@@ -126,7 +126,7 @@ def merging():
     os.system(cmd)
 
 while True:
-    print(u'\n请选择您要做的操作：1-录制视频，2-合并视频 :', end=' ')
+    print('\n请选择您要做的操作：1-录制视频，2-合并视频 :', end=' ')
     choice = input('')
     if choice == '1':
         recording()
