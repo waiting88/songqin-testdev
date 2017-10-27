@@ -41,8 +41,7 @@
 
 
 ```python
-
-########### coding=utf8   ###########
+# coding=utf8
 import sys
 from socket import socket,AF_INET,SOCK_STREAM
 
@@ -55,16 +54,16 @@ ADDR = (HOST, PORT)
 class CloseSocketError(Exception):
     pass
 
+# 一个 ConnectionHandler 处理和一个客户端的连接
 class ConnectionHandler:
     # 0008|1|nickname
     LEN_MSG_LEN_FIELD = 4
     LEN_MSG_LEN_TYPE_FIELD = 7
 
 
-
     def __init__(self,sock):
         # 消息缓存区
-        self._readbuffer = ""
+        self._readbuffer = b''
         self.sock = sock
         self.customername = ''
 
@@ -73,13 +72,17 @@ class ConnectionHandler:
     @staticmethod
     def encode(msgType,msgBody):
         rawMsgBody = msgBody.encode('utf8')
-        return '%04d|%s|%s' % (len(rawMsgBody)+ConnectionHandler.LEN_MSG_LEN_TYPE_FIELD,
-                               msgType,
-                               rawMsgBody)
+
+        msgLenth = '{:04}' \
+        .format(len(rawMsgBody)+ConnectionHandler.LEN_MSG_LEN_TYPE_FIELD) \
+        .encode()
+
+        msgType = f'{msgType}'.encode()
+        return b'|'.join([msgLenth,msgType,rawMsgBody])
 
     @staticmethod
     def decode(rawmsg):
-        msgType = int(rawmsg[5])
+        msgType = int(rawmsg[5:6])  # 这样写rawmsg[5] 返回的是字节对应的数字
         msgbody = rawmsg[ConnectionHandler.LEN_MSG_LEN_TYPE_FIELD:].decode('utf8')
         return [msgType,msgbody]
 
@@ -93,6 +96,7 @@ class ConnectionHandler:
             self.sock.close()
             raise CloseSocketError()
 
+        # 应用程序的读取缓冲，和前面讲的系统的读取缓冲是两个不同的缓冲
         self._readbuffer += bytes
 
         buffLen = len(self._readbuffer)
@@ -113,7 +117,7 @@ class ConnectionHandler:
         else:
             return None
 
-        print 'get:%s' % bytes
+        print('get:%s' % bytes)
 
     # msgBody 是 unicode
     def sendMsg(self,msgType,msgBody):
@@ -123,30 +127,30 @@ class ConnectionHandler:
         # 客户名称
         if msgType == 1:
             self.customername = msgBody
-            print u'客户名称设置：%s' % self.customername
+            print('客户名称设置：%s' % self.customername)
 
         # 普通消息
         elif msgType == 2:
-            print msgBody
-            print '---------------'
-            msgSend = raw_input('>>')
-            # 转成unicode
-            uMsgSend = msgSend.decode(sys.stdin.encoding)
-            self.sendMsg(2,uMsgSend)
+            print(msgBody)
+            print('---------------')
+            # 客服输入消息内容
+            msgSend = input('>>')
+            self.sendMsg(2,msgSend)
 
     # 主循环，不断的接受消息发送消息
     def mainloop(self):
         while True:
             try:
                 msg = self.readMsg()
+                # msg 里面包含了 type 和body
                 if msg:
                     msgType,msgBody= msg
                     self.handleMsg(msgType,msgBody)
             except CloseSocketError:
-                print u'对方断开了连接,等待下一个客户'
+                print('对方断开了连接,等待下一个客户')
                 break
             except IOError:
-                print u'对方断开了连接,等待下一个客户'
+                print('对方断开了连接,等待下一个客户')
                 break
 
 
@@ -160,19 +164,16 @@ tcpSerSock.bind(ADDR)
 
 tcpSerSock.listen(5)
 
-print u'等待客户端连接...'
+print('等待客户端连接...')
 while True:
     #阻塞式等待连接请求
     tcpCliSock, addr = tcpSerSock.accept()
-    print u'有客户连接上来', addr
+    print('有客户连接上来', addr)
 
     handler = ConnectionHandler(tcpCliSock)
     handler.mainloop()
 
 tcpSerSock.close()
-
-
-
 ```
 
 
@@ -203,7 +204,7 @@ class ConnectionHandler:
 
     def __init__(self,sock):
         # 消息缓存区
-        self._readbuffer = ""
+        self._readbuffer = b''
         self.sock = sock
         self.customername = ''
 
@@ -212,13 +213,17 @@ class ConnectionHandler:
     @staticmethod
     def encode(msgType,msgBody):
         rawMsgBody = msgBody.encode('utf8')
-        return '%04d|%s|%s' % (len(rawMsgBody)+ConnectionHandler.LEN_MSG_LEN_TYPE_FIELD,
-                               msgType,
-                               rawMsgBody)
+
+        msgLenth = '{:04}' \
+        .format(len(rawMsgBody)+ConnectionHandler.LEN_MSG_LEN_TYPE_FIELD) \
+        .encode()
+
+        msgType = f'{msgType}'.encode()
+        return b'|'.join([msgLenth,msgType,rawMsgBody])
 
     @staticmethod
     def decode(rawmsg):
-        msgType = int(rawmsg[5])
+        msgType = int(rawmsg[5:6])
         msgbody = rawmsg[ConnectionHandler.LEN_MSG_LEN_TYPE_FIELD:].decode('utf8')
         return [msgType,msgbody]
 
@@ -252,8 +257,7 @@ class ConnectionHandler:
         else:
             return None
 
-        print 'get:%s' % bytes
-
+        print('--> %s' % bytes)
 
     # msgBody 是 unicode
     def sendMsg(self,msgType,msgBody):
@@ -262,13 +266,12 @@ class ConnectionHandler:
     def handleMsg(self,msgType,msgBody):
         # 客户名称
         if msgType == 2:
-            print msgBody
-            print '---------------'
+            print(msgBody)
+            print('---------------')
 
     def userinputAndSend(self):
-        msgSend = raw_input('>>')
-        uMsgSend = msgSend.decode(sys.stdin.encoding)
-        self.sendMsg(2, uMsgSend)
+        msgSend = input('>>')
+        self.sendMsg(2, msgSend)
 
     # 主循环，不断的接受消息发送消息
     def mainloop(self):
@@ -280,16 +283,16 @@ class ConnectionHandler:
         while True:
             try:
                 self.userinputAndSend()
-                print 'reading...'
+                # print('reading...')
                 msg = self.readMsg()
                 if msg:
                     msgType,msgBody= msg
                     self.handleMsg(msgType,msgBody)
             except CloseSocketError:
-                print u'对方断开了连接,程序退出'
+                print('对方断开了连接,程序退出')
                 return
             except IOError:
-                print u'对方断开了连接,程序退出'
+                print('对方断开了连接,程序退出')
                 return
 
 
