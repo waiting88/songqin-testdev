@@ -105,6 +105,7 @@ while True:
 
 #### auto.py
 ```python
+
 # coding=utf8
 import paramiko,time
 
@@ -118,7 +119,9 @@ dirName =  "jcy"
 
 # 先检查 是否已经存在同名目录了， 如果没有则创建
 stdin, stdout, stderr = ssh.exec_command("ls")
-dircontent =  stdout.read()
+# exec_command 返回的是bytes类型，需要解码
+dircontent =  stdout.read().decode()
+
 print(dircontent)
 if dirName in dircontent.splitlines():
     print('{} already exists'.format(dirName))
@@ -156,5 +159,6 @@ sftp.get('{}/ret.txt'.format(dirName),'ret.txt')
 sftp.close()
 
 ssh.close()
+
 
 ```
