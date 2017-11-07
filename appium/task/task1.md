@@ -5,19 +5,19 @@
 
 <br><br>
 ## 安装Appium Python Client 包
-新版本的Selenium 和Appium Server配合有问题，需要安装3.3.1 版本的selenium
+新版本的Selenium 和Appium Server配合有问题，需要安装最新3.7.0 版本的selenium
 
 怎么看selenium版本
 ```python
 d:\data>python
 >>> import selenium
 >>> selenium.__version__
-'3.3.1'
+'3.7.0'
 
-如果版本不是 3.3.1 
+如果版本不是 3.7.0 
 
 pip uninstall selenium
-pip install selenium==3.3.1
+pip install selenium==3.7.0
 ```
 
 安装Appium Python Client 包的命令
@@ -30,14 +30,15 @@ pip install Appium-Python-Client
 
 下载安装Appium Desktop的安装包，
 下载地址 https://github.com/appium/appium-desktop/releases/latest
-
+下载扩展名为.exe的包
 
 
 <br><br>
 ## 安装 Android Studio
 
 官方中文网站
-https://developer.android.google.cn/studio/index.html
+https://developer.android.google.cn/studio/archive.html
+选择2.3.3 版本，包含了sdk的安装包 Windows IDE bundle with SDK (64-bit)
 
 特别注意，安装程序要求路径中最好不要有空格。
 
