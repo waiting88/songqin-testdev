@@ -52,8 +52,13 @@ http://rj.baidu.com/soft/detail/14459.html?ald
 <br><br>
 ## 安装安卓模拟器
 
-android studio里面自带的模拟器
+先试试android studio里面自带的模拟器
+
 打开 studio，创建一个项目，通过tools - android - AVD Manager菜单创建一个安卓模拟设备
+
+-----------
+
+如果不行，可以试试Genymotion
 
 Genymotion  需要注册一个账号，注册好了以后，就可以下载了
 
