@@ -40,8 +40,8 @@ try:
     pass
 
 except:
-    print traceback.format_exc()
+    print (traceback.format_exc())
 
 
-raw_input('**** Press to quit..')
+input('**** Press to quit..')
 driver.quit()
