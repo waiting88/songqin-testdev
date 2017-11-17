@@ -52,3 +52,13 @@ ENOENT: no such file or directory, scandir '/Users/vikram-anna/Library/Android/s
 
 JDK 版本安装 最新的 1.8的版本
 ```
+
+
+
+<br><br><br>
+#### 0004
+使用安卓模拟器 ，运行自动化程序出现如下错误
+
+Failure [INSTALL_FAILED_NO_MATCHING_ABIS]
+
+需要刷入Genymotion-ARM-Translation_v1.1.zip
