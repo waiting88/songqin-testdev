@@ -5,5 +5,5 @@
 | 2017-11-20  20:00  |     WebAPI的概念 + HTTP协议基础| 
 | 2017-11-22  20:00  |     初识Postman工具  | 
 | 2017-11-24  20:00  |     接口测试流程概述 + 实例演示Postman测试 | 
-| 2017-11-16  9:00   |     postman实用技巧 + cookie 、sesion、token|  
+| 2017-11-26  9:00   |     postman实用技巧 + cookie 、sesion、token|  
 
