@@ -74,3 +74,24 @@ UnicodeDecodeError: 'ascii' codec can't decode byte .....
 答： 
 这是环境变量 path 里面有中文导致的
 ```
+
+
+
+
+<br><br><br>
+#### Q
+```python
+问题：
+Win7上 安装Python3，最后提示 "api-ms-win-crt-runtime-l1-1-0.dll 丢失"
+
+
+=========================================
+答： 
+这是Win7 补丁包导致的
+可以下载安装 Microsoft Visual C++ Redistributable for Visual Studio 2015 Update 1
+在这里下载
+https://www.microsoft.com/en-us/download/details.aspx?id=49984
+
+参考 https://github.com/winpython/winpython/issues/245
+
+```
