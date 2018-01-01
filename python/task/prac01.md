@@ -55,8 +55,8 @@ print 'abc'
 - 请到Python官网下载Python解释器，并根据课程视频里面的说明进行安装。
 安装成功后测试一下，在任意目录中，执行 python和pip 都可以成功。
 
-- 请打开下面的链接安装notepad++。  
-http://sw.bos.baidu.com/sw-search-sp/software/3756358c42c34/npp_7.5.1_Installer.exe
+- 请大家百度搜索并安装notepad++
+
 
 安装成功后，用它写一段程序，输出 两行字符串 
 'how are you' 和 'fine, thank you' 到 cmd窗口上，并用解释器执行。
