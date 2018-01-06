@@ -58,17 +58,7 @@ C)   a[3][1] = 8
 D)   a[-1][1] = 8
     
     
-- 一个变量a定义如下
-    a = ['this', 'test', 4.56, ['inner', 'list']]
-    下面的表达式结果为False 的有   
-    
-A)   'this' in a
-    
-B)   'test' in a
-    
-C)   't' not in a
-    
-D)   'inner' in a
+
 
 
 
