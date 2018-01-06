@@ -6,15 +6,32 @@
 
 ```python
 
-    - 下面的表达式结果为False的有 
+- 一个变量a定义如下
+    a = ['this', 'test', 4.56, ['inner', 'list']]
+    下面的表达式结果为False 的有   
     
-    (2 > 1 or 3 > 4) and 5 > 4    
+A)   'this' in a
     
-    2 > 1 or (3 > 4 and 5 > 4)
+B)   'test' in a
+    
+C)   't' not in a
+    
+D)   'inner' in a
 
-    1 > 2 or (3 > 4 and 5 > 4)
+
+
+- 下面的表达式结果为False的有 
     
-    (1 > 2 or 3 > 4) and 5 > 4
+A)    (2 > 1 or 3 > 4) and 5 > 4    
+    
+B)    2 > 1 or (3 > 4 and 5 > 4)
+
+C)    1 > 2 or (3 > 4 and 5 > 4)
+    
+D)    (1 > 2 or 3 > 4) and 5 > 4
+
+
+
 
 ```
 
@@ -97,6 +114,19 @@ else:
 ### 不定项选择
 
 ```python
+
+    - 一个变量a定义如下
+        a = ['this', 'test', 4.56, ['inner', 'list']]
+        下面的表达式结果为False 的有   (d)
+
+    A)   'this' in a
+
+    B)   'test' in a
+
+    C)   't' not in a
+
+    D)   'inner' in a
+
 
     - 下面的表达式结果为False的有 (cd)
     
