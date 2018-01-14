@@ -115,6 +115,9 @@ f20180111153550/i_9wWzVenl.gif	769872	FvslKY9JUaCQm-lu02E34tvAP_oG	1515656167462
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ```python
+
+题1
+
 inputStr = input('Please input student age info:')
 studentInfo = inputStr.split(';')
 for one in studentInfo:
@@ -135,4 +138,30 @@ for one in studentInfo:
     print('%-20s :  %02d' % (name, age))
     # print('{:20} :  {:02}'.format(name, age))
     # print(f'{name:20} :  {age:02}')
+```
+
+
+```python
+
+题2
+
+fileLenDict = {}
+for line in log.split('\n'):
+    if line.strip() == '':
+        continue
+
+    parts = line.split('\t')
+    name,size = parts[:2]
+
+    ext = name.split('.')[-1]
+
+    # 该扩展名已经放入表中
+    if ext in fileLenDict:
+        fileLenDict[ext] += int(size)
+    # 该扩展名还没有放入表中
+    else:
+        fileLenDict[ext] = int(size)
+
+
+print(fileLenDict)
 ```
