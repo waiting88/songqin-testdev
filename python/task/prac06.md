@@ -4,7 +4,7 @@
 对我的考核有好处哦，谢谢大家。
 ```
 
-### 评价到达40个，我会在群里给大家发红包。。。有劳各位啦。。。
+### 评价到达100个，我会在群里给大家发红包。。。有劳各位啦。。。
 <br><br>
 课堂链接 https://ke.qq.com/course/212215#tuin=ba4122
 <br>
@@ -34,7 +34,7 @@ C) "my name is {}, I'm {} years old.".format('Mike',5)
 D) "my name is {}, I'm {} years old.".format(['Mike',5])  
 
 
-- python3 执行下面格式化字符串的代码，哪些是会报错的
+- python3.6 执行下面格式化字符串的代码，哪些是会报错的
 A) "my name is {0}, I'm {1} years old.".format('Mike',5)  
 B) "my name is {}, I'm {1} years old.".format('Mike',5)   
 C) "I'm {1} years old, my name is {0}".format('Mike',5)   
