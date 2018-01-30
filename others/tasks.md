@@ -14,7 +14,7 @@ https://github.com/jcyrss/songqin-testdev/blob/master/python/task/prac03.md
 练习内容见该链接
 https://github.com/jcyrss/songqin-testdev/blob/master/python/task/prac04.md
 
- 作业 5 *******
+作业 5 *******
 练习内容见该链接
 https://github.com/jcyrss/songqin-testdev/blob/master/python/task/prac05.md
 另外有一道编程题，内容见下面链接
@@ -40,11 +40,11 @@ https://github.com/jcyrss/songqin-testdev/blob/master/python/task/task05.md
 编程题，内容见下面链接
 https://github.com/jcyrss/songqin-testdev/blob/master/python/task/task06.md
 
- 作业 10 *******
+作业 10 *******
 编程题，内容见下面链接
 https://github.com/jcyrss/songqin-testdev/blob/master/python/task/task07.md
 
- 作业 11 *******
+作业 11 *******
 编程题，内容见下面链接
 https://github.com/jcyrss/songqin-testdev/blob/master/python/task/task08.md
 
