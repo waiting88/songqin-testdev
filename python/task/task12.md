@@ -32,8 +32,8 @@ import threading
 
 
 urls = [
+'http://mirrors.163.com/centos/build/rpmcompare5.pl.txt',
 'http://mirrors.163.com/centos/6.9/isos/x86_64/README.txt',
-'http://mirrors.163.com/centos/7.3.1611/isos/x86_64/0_README.txt'
 ]
 
 # 对应urls 依次存储网页文件内容, 先创建同样个数的元素占位
