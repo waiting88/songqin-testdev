@@ -58,18 +58,8 @@ http://rj.baidu.com/soft/detail/14459.html?ald
 
 -----------
 
-如果不行，可以试试Genymotion
 
-Genymotion  需要注册一个账号，注册好了以后，就可以下载了
-
-Genymotion 官网上下载安装包: https://www.genymotion.com/download/ 
-
-samsung S7 镜像: http://pan.baidu.com/s/1mhPh9pA
-
-
-
-安装Genymotion-ARM-Translation_v1.1.zip包，刷入虚拟设备。它支持将ARM的机器指令转换为x86的机器指令。 
-共享地址 ： http://pan.baidu.com/s/1jIfx44u
+如果不行，可以试试Genymotion，安装过程参考 https://github.com/jcyrss/songqin-testdev/issues/3
 
 <br><br>
 ## 运行自动化测试
