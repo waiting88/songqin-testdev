@@ -37,7 +37,7 @@ ENOENT: no such file or directory, scandir '/Users/vikram-anna/Library/Android/s
 
 回答：
 
-一般是 android_home 环境变量设置有误导致的
+一般是 ANDROID_HOME  环境变量设置有误导致的
 ```
 
 <br><br><br>
