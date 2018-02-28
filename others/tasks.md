@@ -63,4 +63,13 @@ https://github.com/jcyrss/songqin-testdev/blob/master/python/task/task11.md
 作业 15 *******
 编程题，内容见下面链接
 https://github.com/jcyrss/songqin-testdev/blob/master/python/task/task12.md
+
+作业 16 *******
+编程题，内容见下面链接
+https://github.com/jcyrss/songqin-testdev/blob/master/python/task/task13.md
+
+作业 17 *******
+编程题，内容见下面链接
+https://github.com/jcyrss/songqin-testdev/blob/master/python/task/task14.md
+
 ```
