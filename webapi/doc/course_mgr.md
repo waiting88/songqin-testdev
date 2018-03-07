@@ -68,7 +68,6 @@ Content-Type	必填 	正常情况下该值将被设为application/json，表示�
 ```java
 GET /api/mgr/sq_mgr/?action=list_course&pagenum=1&pagesize=20 HTTP/1.1
 Host:           restapi-teach.com
-Content-Type:   application/x-www-form-urlencoded
 ```
 
 ##### url请求参数
