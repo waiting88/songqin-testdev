@@ -20,7 +20,7 @@ Content-Type:   application/x-www-form-urlencoded
 ```python
 username	必填	填写用户名
 
-username	必填	填写用户密码
+password	必填	填写用户密码
 ```
 
 #### 响应语法
