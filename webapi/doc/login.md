@@ -31,8 +31,10 @@ Content-Type: application/json
 
 ##### 头部信息
 
-Content-Type	必填 	正常情况下该值将被设为application/json，表示返回 JSON 格式的文本信息。
-Set-Cookie    必填  返回本次登录的sessionid，比如：sessionid=89emkau5vhyg8vcwfwvq2pvr7ul2t5sc
+```java
+Content-Type	必填   该字段值为application/json，表示返回 JSON 格式的文本信息。
+Set-Cookie      必填   该字段保存本次登录的sessionid，比如：sessionid=89emkau5vhyg8vcwfwvq2pvr7ul2t5sc
+```
 
 ##### 响应内容
 如果请求成功，返回json格式的消息体，如下所示，retcode值为0表示登录认证成功
