@@ -242,8 +242,8 @@ Content-Type:   application/json
 
 ```json
 {
-  action : "add_course"
-  data	 : {
+  "action" : "add_course",
+  "data"	 : {
     "name":"初中化学",
     "desc":"初中化学课程",
     "display_idx":"4"
