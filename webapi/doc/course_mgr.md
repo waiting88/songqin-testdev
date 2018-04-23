@@ -219,3 +219,60 @@ Content-Type	正常情况下该值将被设为application/json，表示返回 JS
     "retcode": 0
 }
 ```
+
+
+
+### 增加课程接口2
+
+除了上面说的增加课程接口，还提供请求体完全是json 格式的方式添加课程
+
+#### 请求语法
+```java
+POST /apijson/mgr/sq_mgr/ HTTP/1.1
+Host:           restapi-teach.com
+Content-Type:   application/json
+```
+
+##### url请求参数
+无url请求参数
+
+
+##### 请求体内容
+
+```json
+{
+  action : "add_course"
+  data	 : {
+    "name":"初中化学",
+    "desc":"初中化学课程",
+    "display_idx":"4"
+  }
+}
+```
+
+#### 响应语法
+```java
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+##### 头部信息
+
+Content-Type	必填 	正常情况下该值将被设为application/json，表示返回 JSON 格式的文本信息。
+
+##### 响应内容
+如果请求成功，返回json格式的消息体，如下所示，retcode值为0表示添加成功
+```json
+{
+    "retcode": 0
+}
+```
+
+##### 说明
+增加课程的名称如果已经存在，则会创建失败返回结果为
+```json
+{
+    "retcode": 2,
+    "reason": "同名课程已经存在"
+}
+```
