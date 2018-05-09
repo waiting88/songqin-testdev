@@ -115,6 +115,7 @@ with open('ret.txt','w',encoding='utf8') as f :
 
         if (teacherId not in teacherDict) or (courseId not in courseDict):
             print(f'skip record {tc}')
+            continue
 
         ret = f"{teacherDict[teacherId]:10} : {courseDict[courseId]}"
 
