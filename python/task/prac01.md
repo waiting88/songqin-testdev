@@ -45,8 +45,8 @@
 
 - 下面的语句 不对齐， 执行的时候 Python 解释器不会报错
 
-print 'abc'
-  print 'cde'
+print ('abc')
+  print ('cde')
 
 ```
 
@@ -109,8 +109,8 @@ print 'abc'
 
 - 下面的语句 不对齐 ，执行的时候Python 解释器不会报错  (错)
 
-print 'abc'
-  print 'cde'
+print ('abc')
+  print ('cde')
 
 ```
 
