@@ -5,20 +5,6 @@
 
 <br><br>
 ## 安装Appium Python Client 包
-新版本的Selenium 和Appium Server配合有问题，需要安装最新3.7.0 版本的selenium
-
-怎么看selenium版本
-```python
-d:\data>python
->>> import selenium
->>> selenium.__version__
-'3.7.0'
-
-如果版本不是 3.7.0 
-
-pip uninstall selenium
-pip install selenium==3.7.0
-```
 
 安装Appium Python Client 包的命令
 
@@ -45,9 +31,7 @@ https://developer.android.google.cn/studio/archive.html
 
 <br><br>
 ## 安装JDK
-百度搜索一下jdk(操作一下)，下载安装就可以
-
-http://rj.baidu.com/soft/detail/14459.html?ald
+到 oracle 官方网站下载JDK 1.8 的安装包，进行安装
 
 <br><br>
 ## 安装安卓模拟器
