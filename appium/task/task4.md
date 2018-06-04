@@ -4,7 +4,9 @@
 
 - 找到一个安卓设备（没有可以向朋友借用一下）
 - 到华为官网 http://app.hicloud.com/ ，微信扫码右侧二维码，安装华为应用市场apk，
-  
+  
+  如果手机安装后不能打开的，可以[点击这里](https://github.com/jcyrss/songqin-testdev/raw/master/appium/uploads/HiSpace.apk)下载老版本安装，老版本安装运行后，不要选择更新到新版本。
+  
 - 进入排行页面，滚动到 口碑最佳 部分
 - 打印出所有 口碑最佳 部分的5个应用名称
 
