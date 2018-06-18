@@ -151,7 +151,7 @@ Content-Type:   application/x-www-form-urlencoded
 ```python
 action	填写modify_course，表明是为了修改课程信息
 
-id	 填写要修改的课程的id号
+id	 填写要修改的课程的id号数字
 newdata	 存储创建修改后课程的信息，包括名称、描述、显示次序,为json格式。例如：
 {
   "name":"初中化学",
