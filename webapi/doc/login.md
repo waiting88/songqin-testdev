@@ -6,7 +6,7 @@
 
 #### 请求语法
 ```java
-POST /api/mgr/sq_mgr/loginReq HTTP/1.1
+POST /api/mgr/loginReq HTTP/1.1
 Host:           restapi-teach.com
 Content-Type:   application/x-www-form-urlencoded
 ```
