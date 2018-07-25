@@ -34,15 +34,15 @@ yum install mysql-devel
 执行命令 mysql 启动 mysql 命令行客户端，在交互式命令行输入
 
 ```
-CREATE USER 'dbadmin'@'localhost' IDENTIFIED BY 'ohmyjcy1!';   
-CREATE USER 'dbadmin'@'%' IDENTIFIED BY 'ohmyjcy1!';
+CREATE USER 'songqin'@'localhost' IDENTIFIED BY 'songqin';   
+CREATE USER 'songqin'@'%' IDENTIFIED BY 'songqin';
 ```
 
 然后 给 数据库管理员 账号 dbadmin 赋予超级权限
 
 ```
-GRANT ALL ON *.* TO 'dbadmin'@'localhost';
-GRANT ALL ON *.* TO 'dbadmin'@'%';
+GRANT ALL ON *.* TO 'songqin'@'localhost';
+GRANT ALL ON *.* TO 'songqin'@'%';
 ```
 
 执行quit 退出 mysql client
