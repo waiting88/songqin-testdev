@@ -59,3 +59,28 @@ wget https://github.com/jcyrss/songqin-testdev/raw/master/webapi/doc/plesson.sql
 
 mysql -usongqin -psongqin < plesson.sql
 
+
+## 修改教管系统配置文件
+
+将教管系统 访问数据库从本地的sqlite改为使用远程mysql
+
+修改配置文件
+restapi-teach\backend\project\settings.py
+
+注意，下面的ip地址一定要写对
+
+DATABASES = {
+   'default': {
+       'ENGINE': 'django.db.backends.mysql',
+       'NAME': 'plesson',
+       'USER': 'songqin',
+       'PASSWORD': 'songqin',
+       'HOST': '你机器的ip地址',
+       'PORT': '3306',
+       'CONN_MAX_AGE': 0, 
+       'OPTIONS': {
+              "init_command": "SET storage_engine=INNODB",
+       }
+   }
+}
+
