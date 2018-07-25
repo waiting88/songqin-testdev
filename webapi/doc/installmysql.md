@@ -46,3 +46,16 @@ GRANT ALL ON *.* TO 'songqin'@'%';
 ```
 
 执行quit 退出 mysql client
+
+
+## 创建数据库
+
+下载数据库文件 
+
+wget https://github.com/jcyrss/songqin-testdev/raw/master/webapi/doc/plesson.sql
+
+
+执行如下命令，将plesson.sql文件 导入数据库中
+
+mysql -usongqin -psongqin < plesson.sql
+
