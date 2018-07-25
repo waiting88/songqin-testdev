@@ -69,6 +69,7 @@ restapi-teach\backend\project\settings.py
 
 注意，下面的ip地址一定要写对
 
+```py
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.mysql',
@@ -83,4 +84,4 @@ DATABASES = {
        }
    }
 }
-
+```
