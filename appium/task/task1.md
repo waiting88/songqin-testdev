@@ -32,7 +32,8 @@ https://developer.android.google.cn/studio/archive.html
 
 
 方法2：百度云盘下载 zip包，解压
-![image](https://user-images.githubusercontent.com/10496014/43395700-8c9b786e-9431-11e8-9e16-6eda26d6e7ef.png)
+
+![image](https://user-images.githubusercontent.com/10496014/43395777-eb115d32-9431-11e8-9612-3a5f245ba5f3.png)
 
 
 ## 设置android_home 环境变量的值为 sdk 目录
