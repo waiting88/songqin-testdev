@@ -20,7 +20,9 @@ pip install Appium-Python-Client
 
 
 <br><br>
-## 安装 Android Studio
+## 安装 Android SDK
+
+方法1：
 
 官方中文网站
 https://developer.android.google.cn/studio/archive.html
@@ -28,6 +30,12 @@ https://developer.android.google.cn/studio/archive.html
 
 特别注意，安装程序要求路径中最好不要有空格。
 
+
+方法2：百度云盘下载 zip包，解压
+![image](https://user-images.githubusercontent.com/10496014/43395700-8c9b786e-9431-11e8-9e16-6eda26d6e7ef.png)
+
+
+## 设置android_home 环境变量的值为 sdk 目录
 
 <br><br>
 ## 安装JDK
