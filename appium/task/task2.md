@@ -4,9 +4,7 @@
 
 - 到如下网址下载 多多计算器 <br>
 
-
- 
- https://github.com/jcyrss/songqin-testdev/raw/master/appium/uploads/duoduoCalculators.apk
+http://android.myapp.com/myapp/detail.htm?apkName=com.ibox.calculators&ADTAG=mobile
  
 
 - 用 aapt.exe 命令查看 apk包的 appPackage 信息和  主 Activity 信息
