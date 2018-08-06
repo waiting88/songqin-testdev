@@ -1,11 +1,21 @@
 # Appium 作业 5 
 
 <br>
+作业1
 
 - 安装开发者头条应用
 - 打开该应用，在阅读标签页中，点击 精选文章的第一篇，验证确实能打开同名文章
 - 按返回键， 验证能够正确返回 阅读标签页
 
+
+<br>
+
+作业2
+
+- 安装 wv 应用，下载地址如下：https://github.com/jcyrss/songqin-testdev/raw/master/appium/uploads/wv.apk
+- 自动化在手机上运行该应用， 切换到webview
+- 百度搜索 "松勤"
+- 切换回native界面，点击 通知 按钮 
 
 ## 参考答案，往下翻
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
