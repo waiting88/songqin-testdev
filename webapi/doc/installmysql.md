@@ -98,4 +98,6 @@ DATABASES = {
 下载安装portableversion
 
 
+## 打开防火墙端口
 
+iptables -I INPUT -p TCP --dport 3306 -j ACCEPT;/sbin/service iptables save
