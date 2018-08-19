@@ -88,3 +88,14 @@ DATABASES = {
    }
 }
 ```
+
+重新启动
+
+## Heidisql工具连接访问数据库
+
+打开 https://www.heidisql.com/
+
+下载安装portableversion
+
+
+
