@@ -62,6 +62,9 @@ wget --no-check-certificate https://github.com/jcyrss/songqin-testdev/raw/master
 
 mysql -usongqin -psongqin < plesson.sql
 
+执行如下命令，让mysqld服务开机启动
+	
+chkconfig --level 2345 mysqld on
 
 ## 修改教管系统配置文件
 
@@ -91,6 +94,11 @@ DATABASES = {
 
 重新启动
 
+
+## 打开防火墙端口
+
+iptables -I INPUT -p TCP --dport 3306 -j ACCEPT;/sbin/service iptables save
+
 ## Heidisql工具连接访问数据库
 
 打开 https://www.heidisql.com/
@@ -98,6 +106,4 @@ DATABASES = {
 下载安装portableversion
 
 
-## 打开防火墙端口
 
-iptables -I INPUT -p TCP --dport 3306 -j ACCEPT;/sbin/service iptables save
