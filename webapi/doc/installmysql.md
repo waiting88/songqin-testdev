@@ -32,7 +32,7 @@ yum install mysql-devel
 执行命令 service mysqld start
 
 
-## 创建 数据库管理员 账号
+## 创建 数据库用户 账号
 
 执行命令 mysql 启动 mysql 命令行客户端，在交互式命令行输入
 
@@ -41,7 +41,7 @@ CREATE USER 'songqin'@'localhost' IDENTIFIED BY 'songqin';
 CREATE USER 'songqin'@'%' IDENTIFIED BY 'songqin';
 ```
 
-然后 给 数据库管理员 账号 dbadmin 赋予超级权限
+然后 给 数据库用户 账号 songqin 赋予超级权限
 
 ```
 GRANT ALL ON *.* TO 'songqin'@'localhost';
@@ -55,7 +55,7 @@ GRANT ALL ON *.* TO 'songqin'@'%';
 
 下载数据库文件 
 
-wget https://github.com/jcyrss/songqin-testdev/raw/master/webapi/doc/plesson.sql
+wget --no-check-certificate https://github.com/jcyrss/songqin-testdev/raw/master/webapi/doc/plesson.sql
 
 
 执行如下命令，将plesson.sql文件 导入数据库中
