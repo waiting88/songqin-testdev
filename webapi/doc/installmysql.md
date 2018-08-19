@@ -6,6 +6,9 @@
 cetos6.5 下载地址 :
 http://archive.kernel.org/centos-vault/6.5/isos/x86_64/CentOS-6.5-x86_64-bin-DVD1.iso
 
+
+安装好以后，以root用户登录
+
 ## 安装 Mysql 服务
 
 1 执行下面命令安装mysql 5.6 基于 centos 6.5 的yum源
@@ -62,7 +65,7 @@ mysql -usongqin -psongqin < plesson.sql
 
 ## 修改教管系统配置文件
 
-将教管系统 访问数据库从本地的sqlite改为使用远程mysql
+将教管系统 访问数据库从本地的sqlite改为使用远程mysql 服务
 
 修改配置文件
 restapi-teach\backend\project\settings.py
