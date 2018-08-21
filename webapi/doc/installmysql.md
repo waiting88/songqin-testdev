@@ -106,4 +106,9 @@ iptables -I INPUT -p TCP --dport 3306 -j ACCEPT;/sbin/service iptables save
 下载安装portableversion
 
 
+## 安装 mysqlclient 客户端库
+
+在自己的客户端机器上，通常也就是教管系统所在机器上，运行如下命令， mysqlclient 客户端库
+
+pip install mysqlclient==1.3.12
 
