@@ -15,7 +15,7 @@ http://docs.python-requests.org/zh_CN/latest/user/quickstart.html
 http://mirrors.163.com/centos/build/rpmcompare5.pl.txt
 http://mirrors.163.com/centos/6.9/isos/x86_64/README.txt
 
-主线程等待这个两个子线程获取到信息后，将其内容合并后存入名为 readme89.TXT 的文件中
+主线程等待这个两个子线程获取到信息后，将其内容依次合并后存入名为 readme89.TXT 的文件中
 
 
 ```
