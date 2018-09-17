@@ -24,14 +24,6 @@ pip install Appium-Python-Client
 
 方法1：
 
-官方中文网站
-https://developer.android.google.cn/studio/archive.html
-选择2.3.3 版本，包含了sdk的安装包 Windows IDE bundle with SDK (64-bit)
-
-特别注意，安装程序要求路径中最好不要有空格。
-
-<br>
-方法2：
 
 
 先创建目录 d:\android\sdk
@@ -49,12 +41,29 @@ sdkmanager "platform-tools" "platforms;android-28" " build-tools;28.0.2"
 ![image](https://user-images.githubusercontent.com/10496014/43395777-eb115d32-9431-11e8-9612-3a5f245ba5f3.png)
 
 
+<br>
+方法2：
+
+如果 方法1 有问题，可以访问 谷歌 官方中文网站Andorid studio 的下载包
+
+https://developer.android.google.cn/studio/archive.html
+
+选择2.3.3 版本，包含了sdk的安装包 Windows IDE bundle with SDK (64-bit)
+
+下载后，进行安装。
+
+特别注意，安装程序要求路径中最好不要有空格。
+
+
 <br><br>
-## 设置android_home 环境变量的值为 sdk 目录
+## 设置环境变量 android_home 的值为 sdk 目录
 
 <br><br>
 ## 安装JDK
 到 oracle 官方网站下载JDK 1.8 的安装包，进行安装
+
+设置环境变量 JAVA_HOME 为 jdk 的根目录 比如  d:\tools\java\jdk1.8.0_121
+
 
 <br><br>
 ## 手机连接电脑
@@ -73,12 +82,11 @@ sdkmanager "platform-tools" "platforms;android-28" " build-tools;28.0.2"
 安装该应用到手机上
 
 打开应用注册一个账号<br>
+
 - 根据课堂教学视频，运行Appium Server，并设置、启动服务<br>
+
 - 下载自动化脚本https://github.com/jcyrss/songqin-testdev/blob/master/appium/src/lesson1/toutiao_login.py
+
 修改其中用户名，密码为你注册的账号，运行脚本完成一个自动登录功能
 
-
-
-
- 
 
