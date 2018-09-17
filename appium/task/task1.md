@@ -30,12 +30,26 @@ https://developer.android.google.cn/studio/archive.html
 
 特别注意，安装程序要求路径中最好不要有空格。
 
+<br>
+方法2：
 
-方法2：百度云盘下载 zip包，解压
+
+先创建目录 d:\android\sdk
+
+打开 https://developer.android.google.cn/studio/
+
+下载 sdk-tools包 到  d:\android\sdk，进入\tools\bin\ ，执行如下命令，进行下载安装
+
+sdkmanager "platform-tools" "platforms;android-28" " build-tools;28.0.2"
+
+
+<br>
+如果下载过程出现网络异常，可以到松勤共享的百度云盘下载 zip包，解压到目录  d:\android\sdk 即可
 
 ![image](https://user-images.githubusercontent.com/10496014/43395777-eb115d32-9431-11e8-9612-3a5f245ba5f3.png)
 
 
+<br><br>
 ## 设置android_home 环境变量的值为 sdk 目录
 
 <br><br>
@@ -43,22 +57,22 @@ https://developer.android.google.cn/studio/archive.html
 到 oracle 官方网站下载JDK 1.8 的安装包，进行安装
 
 <br><br>
-## 安装安卓模拟器
+## 手机连接电脑
 
-先试试android studio里面自带的模拟器
-
-打开 studio，创建一个项目，通过tools - android - AVD Manager菜单创建一个安卓模拟设备
+找到一个安卓设备（没有可以向朋友借用一下），将其连接到电脑上，根据课堂视频指导，确保可以被命令 adb devices -l 检测到
 
 -----------
 
 
-如果不行，可以试试Genymotion，安装过程参考 https://github.com/jcyrss/songqin-testdev/issues/3
-
 <br><br>
 ## 运行自动化测试
-- 运行虚拟机，下载开发者头条应用，http://toutiao.io/s/apk <br>
-安装到虚拟机中并运行；<br>
-注册一个账号<br>
+
+
+在下面网址下载开发者头条应用 http://toutiao.io/s/apk 
+
+安装该应用到手机上
+
+打开应用注册一个账号<br>
 - 根据课堂教学视频，运行Appium Server，并设置、启动服务<br>
 - 下载自动化脚本https://github.com/jcyrss/songqin-testdev/blob/master/appium/src/lesson1/toutiao_login.py
 修改其中用户名，密码为你注册的账号，运行脚本完成一个自动登录功能
