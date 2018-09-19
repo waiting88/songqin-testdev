@@ -32,8 +32,9 @@ pip install Appium-Python-Client
 
 下载 sdk-tools包 到  d:\android\sdk，进入\tools\bin\ ，执行如下命令，进行下载安装
 
-sdkmanager "platform-tools" "platforms;android-28" " build-tools;28.0.2"
-
+```py
+sdkmanager "platform-tools" "platforms;android-28" "build-tools;28.0.2"
+```
 
 <br>
 如果下载过程出现网络异常，可以到松勤共享的百度云盘下载 zip包，解压到目录  d:\android\sdk 即可
