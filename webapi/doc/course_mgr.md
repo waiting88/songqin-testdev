@@ -40,10 +40,11 @@ Content-Type: application/json
 Content-Type	必填 	正常情况下该值将被设为application/json，表示返回 JSON 格式的文本信息。
 
 ##### 响应内容
-如果请求成功，返回json格式的消息体，如下所示，retcode值为0表示添加成功
+如果请求成功，返回json格式的消息体，如下所示，retcode值为0表示添加成功，id是新加课程对应的ID号
 ```json
 {
     "retcode": 0
+    "id" : 1212
 }
 ```
 
