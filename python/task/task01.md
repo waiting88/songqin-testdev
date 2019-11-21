@@ -11,7 +11,7 @@ A girl come in, the name is Jack, level 955;
 
 其它部分可能都是会变化的，比如，可能是下面这些
 
-A old lady come in, the name is Mary, level 94454
+An old lady come in, the name is Mary, level 94454
 
 A pretty boy come in, the name is Patrick, level 194
 
