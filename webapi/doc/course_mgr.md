@@ -1,6 +1,6 @@
-# 教程网址 www.python3.vip
+# 全套教程网址 www.python3.vip
 
-全套教程网址 www.python3.vip
+
 
 
 # 课程管理API接口
